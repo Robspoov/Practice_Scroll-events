@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+html{
+    box-sizing: border-box; 
+    /* this will prevent entire coverage so it
+    doesn't have to scroll over */
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    /* this will allow the content to cover the full height of the screen even if it isn't the total full height of the screen */
+    font-family: 'Yusei Magic', sans-serif;
+    background: whitesmoke;
+    
+}
+
+h1{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(255, 255, 255, 0.8, green, blue);
+}
+
+.loader img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*  for our image container we need to style */
+.image-container{
+    margin: 10px 30%;
+}
+
+/*  below we are targeting the child class of the image
+container which in this case are the images */
+.image-container img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* we're using media query: for large smartphone */
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 20px;
+    }
+    .image-container{
+        margin: 10px;
+    }
+}
